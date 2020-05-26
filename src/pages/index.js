@@ -31,7 +31,7 @@ const IndexPage = () => (
     </header>
 
     <section className="content-section" id="about" style={{backgroundColor: '#f6bcbc'}}>
-      <div className="container text-center" style={{color: '#0b705b'}}>
+      <div className="container text-center text-primary">
         <div className="row">
           <div className="col-lg-10 mx-auto">
             <h2>
@@ -141,7 +141,7 @@ const IndexPage = () => (
     >
       <div className="container">
         <div className="content-section-heading">
-          <h2 className="mb-5">#SimplementeUmami</h2>
+          <h2 className="mb-5 text-secondary">#SimplementeUmami</h2>
         </div>
         <div className="row">
           <div className="col-lg-12 col-md-12 mb-12 mb-lg-12">
@@ -267,9 +267,9 @@ const IndexPage = () => (
       </div>
     </section> */}
 
-    <section className="content-section bg-primary text-white">
+    <section className="content-section bg-secondary text-white">
       <div className="container text-center">
-        <h2 className="mb-4">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
+        <h2 className="mb-4 text-primary">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
       </div>
     </section>
 

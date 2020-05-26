@@ -12,7 +12,7 @@ export default function Footer() {
               <li key={name} className="list-inline-item">
                 <a
                   href={url}
-                  className="social-link rounded-circle text-white mr-3"
+                  className="social-link rounded-circle text-white mr-3  bg-secondary"
                 >
                   <i className={icon}></i>
                 </a>
