@@ -18,7 +18,7 @@ const p6 = 'https://user-images.githubusercontent.com/10237026/82856338-589a0b80
 
 const IndexPage = () => (
   <Layout>
-    <Header />
+    {/* <Header /> */}
 
     <header className="masthead d-flex">
       <div className="container text-center my-auto">
