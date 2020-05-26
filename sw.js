@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-29917c7779261b5bbe21.js"
+    "url": "webpack-runtime-53f735d80ae90a8b6065.js"
   },
   {
     "url": "framework-81e6052b3504df28bf0b.js"
   },
   {
-    "url": "app-f1baea0eb5bb6732a8e6.js"
+    "url": "app-5e9f7c5207d736246f11.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "bb17265e00c1e445a479408837fbb766"
+    "revision": "ea8e1bd74465758021a95d81d71969da"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-c25716df4fbb2532700a.js"
@@ -48,11 +48,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "d7efa50a64eb361468abeb8deeb53cb5"
+    "revision": "e243d312f660a19e947f4565855cbfad"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "d3133cd2d6540849b95a793107305fa1"
+    "revision": "99ea58f20e7cbaa462ea9f86f1575ced"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -140,12 +140,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/gatsby-starter-stylish`), ``)
+  pathname = pathname.replace(new RegExp(`^/simply-umami.github.io`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/gatsby-starter-stylish/app-f1baea0eb5bb6732a8e6.js`))) {
+  if (!resources || !(await caches.match(`/simply-umami.github.io/app-5e9f7c5207d736246f11.js`))) {
     return await fetch(event.request)
   }
 
@@ -158,7 +158,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/gatsby-starter-stylish/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/simply-umami.github.io/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
