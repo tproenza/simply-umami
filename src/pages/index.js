@@ -50,7 +50,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="content-section-heading text-center">
           <h3 className="text-primary mb-0">#SimplementeUmami</h3>
-          <h2 className="mb-5 text-secondary">Menu</h2>
+          <h2 className="mb-5 text-secondary">Menú</h2>
         </div>
         <div className="row no-gutters">
           <div className="col-lg-6">
