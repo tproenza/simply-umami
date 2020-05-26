@@ -8,10 +8,12 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ScrollToTop from '../components/ScrollToTop';
 
-import p1 from '../assets/images/portfolio-1.jpg';
-import p2 from '../assets/images/portfolio-2.jpg';
-import p3 from '../assets/images/portfolio-3.jpg';
-import p4 from '../assets/images/portfolio-4.jpg';
+const p1 = 'https://user-images.githubusercontent.com/10237026/82856599-00afd480-9ed4-11ea-89cd-34081060af77.jpeg';
+const p2 = 'https://user-images.githubusercontent.com/10237026/82856707-5c7a5d80-9ed4-11ea-8c74-b6d320aa79fb.jpg';
+const p3 = 'https://user-images.githubusercontent.com/10237026/82854334-bc213a80-9ecd-11ea-9ee9-f84b0dbea020.jpeg';
+const p4 = 'https://user-images.githubusercontent.com/10237026/82854328-b7f51d00-9ecd-11ea-9f73-c2e6bf6e8b72.jpeg';
+const p5 = 'https://user-images.githubusercontent.com/10237026/82854314-b0ce0f00-9ecd-11ea-9609-ebfe59f6cbb8.jpeg';
+const p6 = 'https://user-images.githubusercontent.com/10237026/82856338-589a0b80-9ed3-11ea-98c7-062b31e8649b.jpeg ';
 
 const IndexPage = () => (
   <Layout>
@@ -19,96 +21,234 @@ const IndexPage = () => (
 
     <header className="masthead d-flex">
       <div className="container text-center my-auto">
-        <h1 className="mb-1">{config.heading}</h1>
-        <h3 className="mb-5">
-          <em>{config.subHeading}</em>
-        </h3>
-        <Scroll type="id" element="about" offset={100}>
-          <a className="btn btn-primary btn-xl" href="#about">
-            About
-          </a>
-        </Scroll>
+        <img className="mb-1" src={config.heading} style={{width: '500px'}}></img>
+        <h2 className="mb-5">
+          {config.subHeading}
+        </h2>
       </div>
       <div className="overlay"></div>
     </header>
 
-    <section className="content-section bg-light" id="about">
-      <div className="container text-center">
+    <section className="content-section" id="about" style={{backgroundColor: '#f6bcbc'}}>
+      <div className="container text-center" style={{color: '#0b705b'}}>
         <div className="row">
           <div className="col-lg-10 mx-auto">
             <h2>
-              Stylish Portfolio is the perfect theme for your next project!
+            La vida es mi corta para comer aburrido. Come #SimplementeUmami.
             </h2>
             <p className="lead mb-5">
-              This theme features a flexible, UX friendly sidebar menu and stock
-              photos from our friends
+              @Simply.Umami.Food es un espacio de co-creación para compartir recetas y/o vender comida #SimplementeUmami.
+              Umami es un concepto que viene del japonés, significa sabroso/delicioso.
             </p>
-            <Scroll type="id" element="services" offset={100}>
-              <a className="btn btn-dark btn-xl" href="#services">
-                What We Offer
-              </a>
-            </Scroll>
           </div>
         </div>
       </div>
     </section>
 
-    <section
+    <section className="content-section" id="portfolio">
+      <div className="container">
+        <div className="content-section-heading text-center">
+          <h3 className="text-secondary mb-0">#SimplementeUmami</h3>
+          <h2 className="mb-5">Menu</h2>
+        </div>
+        <div className="row no-gutters">
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Dumplings</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p1} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Siu mai</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p2} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Cheese cake</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p3} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Pie de limón</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p4} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Salsa especial</h2>
+                  <p className="mb-0">
+                    #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p5} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-6">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Salted caramel</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p6} alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section
       className="content-section bg-primary text-white text-center"
       id="services"
     >
       <div className="container">
         <div className="content-section-heading">
-          <h3 className="text-secondary mb-0">Services</h3>
-          <h2 className="mb-5">What We Offer</h2>
+          <h2 className="mb-5">#SimplementeUmami</h2>
         </div>
         <div className="row">
-          <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <i className="icon-screen-smartphone"></i>
+          <div className="col-lg-12 col-md-12 mb-12 mb-lg-12">
+            <span className="mx-auto mb-3">
+            <a
+              className="btn btn-xl"
+              href="https://api.whatsapp.com/send?phone=50766716505"
+              style={{backgroundColor: '#4AC959', color: "white"}}
+            >
+               <i class="fab fa-whatsapp fa-3x"></i>
+               <span style={{fontSize: '30px', marginLeft: '10px'}}>Chatea con nosotros</span>
+            </a>
             </span>
-            <h4>
-              <strong>Responsive</strong>
-            </h4>
-            <p className="text-faded mb-0">Looks great on any screen size!</p>
-          </div>
-          <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <i className="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Redesigned</strong>
-            </h4>
-            <p className="text-faded mb-0">
-              Freshly redesigned for Bootstrap 4.
-            </p>
-          </div>
-          <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <i className="icon-like"></i>
-            </span>
-            <h4>
-              <strong>Favorited</strong>
-            </h4>
-            <p className="text-faded mb-0">
-              Millions of users
-              <i className="fas fa-heart"></i>
-            </p>
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <i className="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Question</strong>
-            </h4>
-            <p className="text-faded mb-0">I mustache you a question...</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section className="callout">
+        <section className="content-section" id="portfolio">
+      <div className="container">
+        <div className="content-section-heading text-center">
+          <h3 className="text-secondary mb-0">#SimplementeUmami</h3>
+          <h2 className="mb-5">Instagram</h2>
+        </div>
+        <div className="row no-gutters">
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Dumplings</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p1} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Siu mai</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p2} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Cheese cake</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p3} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Pie de limón</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p4} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Salsa especial</h2>
+                  <p className="mb-0">
+                    #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p5} alt="" />
+            </a>
+          </div>
+          <div className="col-lg-4">
+            <a className="portfolio-item" href="/#">
+              <span className="caption">
+                <span className="caption-content">
+                  <h2>Salted caramel</h2>
+                  <p className="mb-0">
+                  #SimplementeUmami
+                  </p>
+                </span>
+              </span>
+              <img className="img-fluid img-responsive" src={p6} alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* <section className="callout">
       <div className="container text-center">
         <h2 className="mx-auto mb-5">
           Welcome to
@@ -122,83 +262,11 @@ const IndexPage = () => (
           Download Now!
         </a>
       </div>
-    </section>
-
-    <section className="content-section" id="portfolio">
-      <div className="container">
-        <div className="content-section-heading text-center">
-          <h3 className="text-secondary mb-0">Portfolio</h3>
-          <h2 className="mb-5">Recent Projects</h2>
-        </div>
-        <div className="row no-gutters">
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="/#">
-              <span className="caption">
-                <span className="caption-content">
-                  <h2>Stationary</h2>
-                  <p className="mb-0">
-                    A yellow pencil with envelopes on a clean, blue backdrop!
-                  </p>
-                </span>
-              </span>
-              <img className="img-fluid" src={p1} alt="" />
-            </a>
-          </div>
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="/#">
-              <span className="caption">
-                <span className="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p className="mb-0">
-                    A dark blue background with a colored pencil, a clip, and a
-                    tiny ice cream cone!
-                  </p>
-                </span>
-              </span>
-              <img className="img-fluid" src={p2} alt="" />
-            </a>
-          </div>
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="/#">
-              <span className="caption">
-                <span className="caption-content">
-                  <h2>Strawberries</h2>
-                  <p className="mb-0">
-                    Strawberries are such a tasty snack, especially with a
-                    little sugar on top!
-                  </p>
-                </span>
-              </span>
-              <img className="img-fluid" src={p3} alt="" />
-            </a>
-          </div>
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="/#">
-              <span className="caption">
-                <span className="caption-content">
-                  <h2>Workspace</h2>
-                  <p className="mb-0">
-                    A yellow workspace with some scissors, pencils, and other
-                    objects.
-                  </p>
-                </span>
-              </span>
-              <img className="img-fluid" src={p4} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> */}
 
     <section className="content-section bg-primary text-white">
       <div className="container text-center">
-        <h2 className="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="/#" className="btn btn-xl btn-light mr-4">
-          Click Me!
-        </a>
-        <a href="/#" className="btn btn-xl btn-dark">
-          Look at Me!
-        </a>
+        <h2 className="mb-4">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
       </div>
     </section>
 
