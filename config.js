@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-stylish/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/simply-umami.github.io/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'https://user-images.githubusercontent.com/10237026/82778659-a2252080-9e17-11ea-9335-3172bd1ce25f.png',
   subHeading: '',
 
@@ -19,7 +19,7 @@ module.exports = {
       url: 'https://www.instagram.com/p/B_9_r-QnFDm',
     },
   ],
-  email: 'anubhav.srivastava00@gmail.com',
+  email: '',
   phone: '000-00000',
   address: '305 Del Sol, Sunnyvale, CA',
 };
