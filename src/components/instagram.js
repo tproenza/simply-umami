@@ -30,8 +30,8 @@ export default function Instagram() {
     <section className="content-section" id="portfolio">
       <div className="container">
         <div className="content-section-heading text-center">
-          <h3 className="text-secondary mb-0">#SimplementeUmami</h3>
-          <h2 className="mb-5">Instagram</h2>
+          <h3 className="text-primary mb-0">#SimplementeUmami</h3>
+          <h2 className="mb-5 text-secondary">Instagram</h2>
         </div>
         <div className="row no-gutters">
           {gramz.map(gram => (

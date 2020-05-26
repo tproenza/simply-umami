@@ -30,7 +30,7 @@ const IndexPage = () => (
       <div className="overlay"></div>
     </header>
 
-    <section className="content-section" id="about" style={{backgroundColor: '#f6bcbc'}}>
+    <section className="content-section bg-secondary" id="about">
       <div className="container text-center text-primary">
         <div className="row">
           <div className="col-lg-10 mx-auto">
@@ -49,8 +49,8 @@ const IndexPage = () => (
     <section className="content-section" id="portfolio">
       <div className="container">
         <div className="content-section-heading text-center">
-          <h3 className="text-secondary mb-0">#SimplementeUmami</h3>
-          <h2 className="mb-5">Menu</h2>
+          <h3 className="text-primary mb-0">#SimplementeUmami</h3>
+          <h2 className="mb-5 text-secondary">Menu</h2>
         </div>
         <div className="row no-gutters">
           <div className="col-lg-6">
@@ -268,8 +268,8 @@ const IndexPage = () => (
     </section> */}
 
     <section className="content-section bg-secondary text-white">
-      <div className="container text-center">
-        <h2 className="mb-4 text-primary">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
+      <div className="container text-center text-primary">
+        <h2 className="mb-4">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
       </div>
     </section>
 
