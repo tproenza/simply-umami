@@ -7,6 +7,7 @@ import config from '../../config';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ScrollToTop from '../components/ScrollToTop';
+import Instagram from '../components/instagram';
 
 const p1 = 'https://user-images.githubusercontent.com/10237026/82856599-00afd480-9ed4-11ea-89cd-34081060af77.jpeg';
 const p2 = 'https://user-images.githubusercontent.com/10237026/82856707-5c7a5d80-9ed4-11ea-8c74-b6d320aa79fb.jpg';
@@ -150,7 +151,7 @@ const IndexPage = () => (
               href="https://api.whatsapp.com/send?phone=50766716505"
               style={{backgroundColor: '#4AC959', color: "white"}}
             >
-               <i class="fab fa-whatsapp fa-3x"></i>
+               <i className="fab fa-whatsapp fa-3x"></i>
                <span style={{fontSize: '30px', marginLeft: '10px'}}>Chatea con nosotros</span>
             </a>
             </span>
@@ -159,7 +160,9 @@ const IndexPage = () => (
       </div>
     </section>
 
-        <section className="content-section" id="portfolio">
+    <Instagram></Instagram>
+
+    {/* <section className="content-section" id="portfolio">
       <div className="container">
         <div className="content-section-heading text-center">
           <h3 className="text-secondary mb-0">#SimplementeUmami</h3>
@@ -246,7 +249,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* <section className="callout">
       <div className="container text-center">
