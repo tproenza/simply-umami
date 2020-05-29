@@ -22,7 +22,7 @@ const IndexPage = () => (
 
     <header className="masthead d-flex">
       <div className="container text-center my-auto">
-        <img className="mb-1" src={config.heading} style={{width: '500px'}}></img>
+        <img className="mb-1" src={config.heading}></img>
         <h2 className="mb-5">
           {config.subHeading}
         </h2>
@@ -37,6 +37,7 @@ const IndexPage = () => (
             <h2>
             La vida es mi corta para comer aburrido. Come #SimplementeUmami.
             </h2>
+            <br />
             <p className="lead mb-5">
               @Simply.Umami.Food es un espacio de co-creación para compartir recetas y/o vender comida #SimplementeUmami.
               Umami es un concepto que viene del japonés, significa sabroso/delicioso.

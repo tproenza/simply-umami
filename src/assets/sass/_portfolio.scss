@@ -58,3 +58,26 @@
     }
   }
 }
+
+.instagram-item {
+  height: 300px;
+  
+  @media(min-width: 992px) {
+    height: 300px;
+
+    .instagram-img {
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      -webkit-transition: -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    &:hover {
+      .instagram-img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+      }
+    }
+  }
+}

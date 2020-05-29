@@ -36,18 +36,20 @@ export default function Instagram() {
         <div className="row no-gutters">
           {gramz.map(gram => (
             <div className="col-lg-4" key={gram.id}>
-              <a className="portfolio-item" href={gram.postUrl}>
-                <span className="caption">
-                  <span className="caption-content">
-                    <h2 style={{fontSize: '24px'}}>
-                      <i className="fa fa-heart" style={{marginRight: '5px'}}></i>{gram.likes} 
-                      <i className="fa fa-comment" style={{marginLeft: '30px',marginRight: '5px'}}></i>{gram.comments}
-                    </h2>
-                    <p className="mb-0">
-                    </p>
+              <a className="portfolio-item instagram-item" href={gram.postUrl}>
+                <div className="insta" style={{background: `url(${gram.imageUrl}) no-repeat center center`}}></div>
+                  <span className="caption">
+                    <span className="caption-content">
+                      <h2 style={{fontSize: '24px'}}>
+                        <i className="fa fa-heart" style={{marginRight: '5px'}}></i>{gram.likes} 
+                        <i className="fa fa-comment" style={{marginLeft: '30px',marginRight: '5px'}}></i>{gram.comments}
+                      </h2>
+                      <p className="mb-0">
+                      </p>
+                    </span>
                   </span>
-                </span>
-                <img className="img-fluid img-responsive" src={gram.imageUrl} alt="" />
+                <div className="instagram-img img-fluid img-responsive" style={{height: '300px', width: '100%', background: `url(${gram.imageUrl}) no-repeat center center`}}></div>
+                {/* <img className="img-fluid img-responsive" src={gram.imageUrl} alt="" /> */}
               </a>
             </div>
           ))}

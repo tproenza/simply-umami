@@ -17,11 +17,16 @@ body {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+
+  h2 {
+    overflow-wrap: break-word;
+  }
 }
 
 .content-section-heading {
   h2 {
     font-size: 3rem;
+    overflow-wrap: break-word;
   }
   h3 {
     font-size: 1rem;
