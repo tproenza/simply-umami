@@ -33,12 +33,9 @@ const IndexPage = () => (
     <section className="content-section bg-secondary" id="about">
       <div className="container text-center text-primary">
         <div className="row">
-          <div className="col-lg-10 mx-auto">
+          <div className="col-lg-12 mx-auto">
             <h2>
-            La vida es muy corta para comer aburrido.
-            </h2>
-            <h2>
-            Come #SimplementeUmami.
+            La vida es mi corta para comer aburrido. Come #SimplementeUmami.
             </h2>
             <br />
             <p className="lead mb-5">
@@ -62,15 +59,8 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <h2>Dumplings</h2>
-                  <h2>Vegetales, puerco, carne ó pollo</h2>
                   <p className="mb-0">
-                  10 unidades - $8
-                  </p>
-                  <p className="mb-0">
-                  20 unidades - $15
-                  </p>
-                  <p className="mb-0">
-                  + salsita especial extra
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -82,15 +72,8 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <h2>Siu mai</h2>
-                  <h2>Puerco + hongos shitake</h2>
                   <p className="mb-0">
-                  10 unidades - $8
-                  </p>
-                  <p className="mb-0">
-                  20 unidades - $15
-                  </p>
-                  <p className="mb-0">
-                  + salsita especial extra
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -101,12 +84,9 @@ const IndexPage = () => (
             <a className="portfolio-item" href="/#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Salted caramel cheesecake</h2>
+                  <h2>Cheese cake</h2>
                   <p className="mb-0">
-                  Porción(1) - $6
-                  </p>
-                  <p className="mb-0">
-                    Entero(8) - $36
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -119,10 +99,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Pie de limón</h2>
                   <p className="mb-0">
-                  Porción(1) - $5
-                  </p>
-                  <p className="mb-0">
-                  Entero(8) - $20
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -135,13 +112,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Salsa especial</h2>
                   <p className="mb-0">
-                  2oz - $1.5
-                  </p>
-                  <p className="mb-0">
-                  6oz - $5
-                  </p>
-                  <p className="mb-0">
-                  8oz - $6
+                    #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -154,10 +125,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Salted caramel</h2>
                   <p className="mb-0">
-                  6oz - $5.5
-                  </p>
-                  <p className="mb-0">
-                  8oz - $7
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -173,9 +141,13 @@ const IndexPage = () => (
       id="services"
     >
       <div className="container">
-        <div className="content-section-heading">
-          <h2 className="mb-5 text-secondary">#SimplementeUmami</h2>
+      <div className="row">
+        <div className="col-lg-12 col-md-12 mb-12 mb-lg-12">
+          <div className="content-section-heading">
+            <h2 className="mb-5 text-secondary">#SimplementeUmami</h2>
+          </div>
         </div>
+      </div>
         <div className="row">
           <div className="col-lg-12 col-md-12 mb-12 mb-lg-12">
             <span className="mx-auto mb-3">
@@ -207,12 +179,8 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <h2>Dumplings</h2>
-                  <h2>Vegetales, pollo, carne ó puerco</h2>
                   <p className="mb-0">
-                  10 unidades - $8 | 20 unidades - $15
-                  </p>
-                  <p className="mb-0">
-                  + 1-2 oz de salsa especial
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -224,12 +192,8 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <h2>Siu mai</h2>
-                  <h2>Puerco + hongos shitake</h2>
                   <p className="mb-0">
-                  10 unidades - $8 | 20 unidades - $15
-                  </p>
-                  <p className="mb-0">
-                  + 1-2 oz de salsa especial
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -240,12 +204,9 @@ const IndexPage = () => (
             <a className="portfolio-item" href="/#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Salted caramel cheesecake</h2>
+                  <h2>Cheese cake</h2>
                   <p className="mb-0">
-                  Porción (1) - $6
-                  </p>
-                  <p className="mb-0">
-                  Entero (8) - $36
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -258,10 +219,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Pie de limón</h2>
                   <p className="mb-0">
-                  Porción (1) - $5
-                  </p>
-                  <p className="mb-0">
-                  Entero (8) - $20
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -274,13 +232,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Salsa especial</h2>
                   <p className="mb-0">
-                    2oz - $1.5
-                  </p>
-                  <p className="mb-0">
-                    6oz - $5
-                  </p>
-                  <p className="mb-0">
-                    8oz - $6
+                    #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -293,10 +245,7 @@ const IndexPage = () => (
                 <span className="caption-content">
                   <h2>Salted caramel</h2>
                   <p className="mb-0">
-                  6oz - $5.5
-                  </p>
-                  <p className="mb-0">
-                  8oz - $7
+                  #SimplementeUmami
                   </p>
                 </span>
               </span>
@@ -325,7 +274,7 @@ const IndexPage = () => (
 
     <section className="content-section bg-secondary text-white">
       <div className="container text-center text-primary">
-        <h2 className="mb-4">Hoy es buen día para ser feliz, más ahora que vas a comer #SimplementeUmami</h2>
+        <h2 className="mb-4">Hoy es buen dia para ser feliz, mas ahora que vas a comer #SimplementeUmami</h2>
       </div>
     </section>
 
